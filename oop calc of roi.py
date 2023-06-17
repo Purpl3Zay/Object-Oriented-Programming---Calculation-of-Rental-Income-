@@ -171,3 +171,40 @@ class Agent:
         PropertyClass = self.type_map[(property_type, payment_type)]
         init_args = PropertyClass.prompt_init()
         self.property_list.append(PropertyClass(**init_args))
+
+calcproperty = Property()
+calcproperty.display()
+calcproperty.prompt_init()
+
+calcapartment = Apartment()
+calcapartment.display()
+calcapartment.prompt_init()
+
+calchouse = House()
+calchouse.display()
+calchouse.prompt_init()
+
+calcpurchase = Purchase()
+calcpurchase.display()
+calcpurchase.prompt_init()
+
+calcrental = Rental()
+calcrental.display()
+calcrental.prompt_init()
+
+calchouserental = HouseRental()
+calchouserental.prompt_init()
+
+calcapartmentrental = ApartmentRental()
+calcapartmentrental.prompt_init()
+
+calcapartmentpurchase = ApartmentPurchase()
+calcapartmentpurchase.prompt_init()
+
+calchousepurcase = HousePurchase()
+calchousepurcase.prompt_init()
+
+
+agentassigned = Agent()
+agentassigned.display_properties()
+agentassigned.add_property()
